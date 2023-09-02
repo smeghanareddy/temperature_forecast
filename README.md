@@ -20,6 +20,14 @@ Few Address details
 Basic Code related information
 1. In this project, we are using geocoder services to convert full address into latitude, longitude, country code and zip code
 2. We are also using openWeather API for accessing the weather information through latitude and logitude
-3. We need to enable cache to forecast 30minutes for all subsequent requests by zip codes.(run rails dev:cache)
+    https://api.openweathermap.org/data/2.5/weather?lat=#{latitude}&lon=#{longitude}&units=imperial&appid=#{api_key}
+3. For using openWeather API we need to generate api key
+3. We need to enable cache to forecast 30 minutes for all subsequent requests by zip codes.(run rails dev:cache)
 4. We need to display the true if it is cached else false
+
+Commands need to run
+rails dev:cache #for enabling cache
+rails test:all # for unit testing
+
+
 
