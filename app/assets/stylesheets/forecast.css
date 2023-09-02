@@ -5,8 +5,17 @@ body{
     font-family: 'Arial';
 }
 
-.styled {
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.btn {
     border: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     line-height: 2.0;
     margin-top :20px;
     padding: 0 20px;
@@ -22,26 +31,29 @@ body{
         inset -2px -2px 3px rgba(0, 0, 0, 0.6);
 }
 
-.styled:hover {
+.btn:hover {
     background-color: #0000ff73;
 }
+li{
+    font-size: 14px !important;
+    padding-top: 3px;
+}
 
-.styled:active {
+.bn:active {
   box-shadow:
     inset -2px -2px 3px rgba(255, 255, 255, 0.6),
     inset 2px 2px 3px rgba(0, 0, 0, 0.6);
 }
 
 .text_tag{
-    width:  400px;
+    width:  375px;
 }
 
 .login{
     width: 382px;
-    overflow: hidden;
     margin: auto;
     margin: 20 0 0 450px;
-    padding: 80px;
+    padding: 60px;
     background: white;
     border-radius: 15px ;
 
@@ -57,4 +69,7 @@ label{
     text-align: center;
     color: #0c17cfd9;
     font-size: 17px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -13,6 +13,7 @@ class WeatherService
     body["main"]["temp"] or raise IOError.new "OpenWeather temperature is missing"
     body["main"]["temp_min"] or raise IOError.new "OpenWeather temperature minimum is missing"
     body["main"]["temp_max"] or raise IOError.new "OpenWeather temperature maximum is missing"
+    body["weather"][0]["icon"] or raise IOError.new "OpenWeather temperature icon is missing"
     body["weather"] or raise IOError.new "OpenWeather weather section is missing"
     body["weather"].length > 0 or raise IOError.new "OpenWeather weather section is empty"
     body["weather"][0]["description"] or raise IOError.new "OpenWeather weather description is missing"
@@ -23,6 +24,7 @@ class WeatherService
     weather.temperature_max = body["main"]["temp_max"]
     weather.humidity = body["main"]["humidity"]
     weather.pressure = body["main"]["pressure"]
+    weather.icon = body["weather"][0]["icon"]
     weather.description = body["weather"][0]["description"]
     weather
   end
