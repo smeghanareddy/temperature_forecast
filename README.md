@@ -24,10 +24,12 @@ Basic Code related information
 3. For using openWeather API we need to generate api key
 3. We need to enable cache to forecast 30 minutes for all subsequent requests by zip codes.(run rails dev:cache)
 4. We need to display the true if it is cached else false
+5. URL for running the code -------------->  /forecast/show
 
 Commands need to run
 rails dev:cache #for enabling cache
 rails test:all # for unit testing
+
 
 
 
